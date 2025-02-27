@@ -1,12 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title></title>
-	<style>
-		marquee{ background-color: red ;font-size: 25px; color:white ;padding:20px}
-		nav {
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <style>
+        marquee {
+            background-color: red;
+            font-size: 25px;
+            color: white;
+            padding: 20px;
+        }
+        nav {
             background-color: #333;
         }
         nav ul {
@@ -26,18 +31,65 @@
         }
         nav ul li a:hover {
             background-color: #575757;
-	</style>
+        }
+        a {
+            font-size: 30px;
+            color: black;
+            font-family: arial;
+            text-decoration: none;
+        }
+        div {
+            text-indent: justify;
+        }
+        figcaption {
+            width: 480px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            font-size: 20px;
+            color: black;
+            text-align: center;
+            background-color: beige;
+        }
+        .test {
+            text-indent: auto;
+        }
+
+        /* Flexbox để căn chỉnh ảnh và liên kết "Hoạt động" thẳng hàng */
+        .flex-container {
+            display: flex;
+            flex-direction:column;
+            align-items: flex-start; /* Căn chỉnh theo chiều dọc */
+            gap: 20px;
+            margin-left:20px /* Khoảng cách giữa ảnh và liên kết */
+        }
+    </style>
 </head>
 <body>
 <header>
-	<marquee>Tháng Thanh niên 2024 - "thanh niên xung kích, tình nguyện vì cuộc sống cộng đồng"</marquee>
-	<nav>
+    <marquee>Tháng Thanh niên 2024 - "thanh niên xung kích, tình nguyện vì cuộc sống cộng đồng"</marquee>
+</header>
+<div>
+    <nav>
         <ul>
             <li><a href="https://thptdoankethaibatrung.edu.vn/">Giới thiệu</a></li>
             <li><a href="https://thptdoankethaibatrung.edu.vn/tin-tuc">Tin tức</a></li>
             <li><a href="#lien-he">Liên hệ</a></li>
         </ul>
     </nav>
-	<img src="https://bizweb.dktcdn.net/100/351/040/themes/958137/assets/slider_1.jpg?1727058162822" style="width:100%; height=auto">
+    <img src="https://bizweb.dktcdn.net/100/351/040/themes/958137/assets/slider_1.jpg?1727058162822" style="width:100%; height=auto">
+</div>
+<div class="test">
+    <!-- Sử dụng Flexbox để căn chỉnh ảnh và liên kết thẳng hàng -->
+    <div class="flex-container">
+        <a href="https://thptdoankethaibatrung.edu.vn/hoat-dong">Hoạt động</a>
+        <figure>
+            <a href="https://thptdoankethaibatrung.edu.vn/chuong-trinh-sinh-hoat-ngoai-gio-len-lop-to-hoa-sinh-chao-mung-ky-niem-80-nam-ngay-thanh-lap-quan-doi-nhan-dan-viet-nam-22-12-1944-22-12-2024">
+                <img src="https://bizweb.dktcdn.net/thumb/large/100/351/040/articles/z6171226771500-6ec20742ef46bb8003f8ba20b1745c15.jpg?v=1735284118233" title="skibidi">
+                <figcaption>CHƯƠNG TRÌNH SINH HOẠT NGOÀI GIỜ LÊN LỚP, TỔ HÓA - SINH: CHÀO MỪNG KỶ NIỆM 80 NĂM NGÀY THÀNH LẬP QUÂN ĐỘI NHÂN DÂN VIỆT NAM (22/12/1944 - 22/12/2024)</figcaption>
+            </a>
+        </figure>
+    </div>
+</div>
 </body>
 </html>
